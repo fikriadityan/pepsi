@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi</title>
+
+    <section class="sec">
+        <header>
+            <a href="#"><img src="img/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>That's What<br><span>I Like</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum praesentium cumque voluptates voluptate, similique, tenetur at blanditiis nulla quam magnam recusandae. Vero voluptate error asperiores reiciendis ab rem, quas quidem!</p>
+                    <a href="#">VIEW PRODUCTS</a>
+            </div>
+        <div class="imgBox">
+            <img src="img/pepsi001.png" class="pepsi">
+        </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="img/pepsi001.png" onclick="imgSlider('img/pepsi001.png');changeBgcolor('#0062be')"></li>
+            <li><img src="img/pepsi002.png" onclick="imgSlider('img/pepsi002.png');changeBgcolor('#e60c2c')"></li>
+            <li><img src="img/pepsi003.png" onclick="imgSlider('img/pepsi003.png');changeBgcolor('#1e1e1e')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="img/facebook.png"></a></li>
+            <li><a href="#"><img src="img/instagram.png"></a></li>
+            <li><a href="#"><img src="img/twitter.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.pepsi').src = anything;
+        }
+        function changeBgcolor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+
+    <!-- fonts -->
+    <link
+    href="https://fonts.googleapis.com/css2?family-Poppins:wght@200;300;400;500;600;700;800;900;&display-swap"
+    rel="stylesheet"
+    />
+
+    <!-- ke css -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    
+</body>
+</html>
